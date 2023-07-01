@@ -20,7 +20,7 @@ def getw():
     api_url = 'http://apis.juhe.cn/simpleWeather/query'
     params_dict = {
         "city": "西安",  # 查询天气的城市名称，如：北京、苏州、上海
-        "key": "3caad1ba4d508380ec01eef6ef243ebd",  # 您申请的接口API接口请求Key
+        "key": "",  # 您申请的接口API接口请求Key
     }
     params = urllib.parse.urlencode(params_dict)
     try:
@@ -44,10 +44,10 @@ def getw():
                     print("温度：%s\n湿度：%s\n天气：%s\n天气标识：%s\n风向：%s\n风力：%s\n空气质量：%s" % (
                         temperature, humidity, info, wid, direct, power, aqi))
                     # 发送多种类型的邮件
-                    msg_from = '251249602@qq.com'  # 发送方邮箱
-                    passwd = 'vxownzaomvbfbiii'  # 就是上面的授权码
+                    msg_from = ''  # 发送方邮箱
+                    passwd = ''  # 就是上面的授权码
 
-                    to = ['er2222qing@163.com']  # 接受方邮箱
+                    to = ['']  # 接受方邮箱
 
                     # 设置邮件内容
                     # MIMEMultipart类可以放任何内容
